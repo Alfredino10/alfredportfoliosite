@@ -355,6 +355,7 @@ a {
     }
 }
 
+
 /* my skills percent ends here*/
 /* info div ends here */
 
@@ -398,6 +399,10 @@ a {
     cursor: pointer;
 }
 
+#img-see-more {
+    margin-left: 20%;
+}
+
 @media screen and (max-width: 776px) {
     #gallery {
         margin-top: 150px;
@@ -413,6 +418,9 @@ a {
     }
     #gallery-cont img {
         min-height: 120px;
+    }
+    #img-see-more {
+        margin-left: 10%;
     }
 }
 
