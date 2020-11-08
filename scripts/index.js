@@ -5,6 +5,34 @@ window.onload = function init() {
     navBtn.addEventListener('click', function displayNav(evt) {
         topNav.classList.toggle('active');
     });
+
+    let getImages = document.querySelectorAll(".small-image");
+    let displayDiv = document.createElement('div');
+const removeBtn = document.createElement('button');
+const displayBiggerImages = document.createElement('img');
+let imgCont = document.querySelector('#gallery');
+
+getImages.forEach(function(n) {
+  n.addEventListener('click', function(evt) {
+      let attr = n.getAttribute('src');
+
+      imgCont.appendChild(displayDiv);
+      displayDiv.classList.add('large-images');
+      displayDiv.appendChild(displayBiggerImages);
+
+      displayBiggerImages.src = attr;
+      displayBiggerImages.title = n.title;
+
+  })
+});
+
+displayDiv.appendChild(removeBtn);
+removeBtn.textContent = "X";
+removeBtn.classList.add('close-large-images');
+removeBtn.addEventListener('click', function(evt) {
+    imgCont.removeChild(displayDiv);
+});
+
 }
 
 
