@@ -455,6 +455,8 @@ a {
     padding: 10px;
     color: brown;
     background-color: white;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .close-large-images:hover {
     opacity: 0.7;
