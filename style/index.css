@@ -470,6 +470,132 @@ a {
     opacity: 0.7;
 }
 /* gallery ends here */
+
+#services {
+    margin-top: 30px;
+}
+#services-header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    background-image: url('../images/services-back.jpg');
+}
+#services-header h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+    color: #43cea2;
+}
+#services-angle {
+    font-size: 4em;
+    position: relative;
+    color: white;
+    opacity: 0.6;
+    margin-top: 0;
+    animation-name: unstopable;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes unstopable {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 5px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+#services-offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+@media screen and (min-width: 776px) {
+#services-offer::-webkit-scrollbar {
+    width: 3px;
+  }
+  #services-offer::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  #services-offer::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+}
+.services-child {
+    text-align: center;
+    opacity: 0.8;
+    padding: 12px;
+}
+@media screen and (min-width: 776px) {
+.services-child:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 20px;
+    transform: scale(1.1);
+    animation-name: services;
+    animation-duration: 1s;
+}
+@keyframes services {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+}
+.services-child img {
+    width: 250px;
+    min-height: 200px;
+}
+.services-child p {
+    color: black;
+}
+
+#gettingStarted {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: darkcyan;
+    width: 500px;
+    position: fixed;
+    bottom: 20%;
+    z-index: 99999999;
+    margin: auto;
+    display: none;
+    animation-name: gettingStarted;
+    animation-duration: 1s;
+}
+#gettingStarted p{
+    font-size: 1.5em;
+    color: white;
+}
+#gettingStarted a {
+    display: inline-block;
+}
+#gettingStarted button {
+    font-size: 1.4em;
+    color: red;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes gettingStarted {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
 #learning-sources {
     margin: auto;
     margin-top: 100px;
