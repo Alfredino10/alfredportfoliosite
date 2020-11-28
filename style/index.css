@@ -507,15 +507,20 @@ a {
         top: 0;
     }
 }
+#services-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
 
 #services-offer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 35px;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: auto;
+    width: 1200px;
+    margin: auto;
+
 }
 @media screen and (min-width: 776px) {
 #services-offer::-webkit-scrollbar {
