@@ -294,6 +294,10 @@ a {
     color: white;
 
 }
+.see-more:hover {
+    background-color: #063869;
+    border: 1px solid #185a9d;
+}
 #my-info-div2 {
     flex: 1;
     background-image: url("../images/team-work.jpg");
@@ -543,7 +547,6 @@ a {
 }
 .services-child {
     text-align: center;
-    opacity: 0.8;
     padding: 12px;
 }
 @media screen and (min-width: 776px) {
