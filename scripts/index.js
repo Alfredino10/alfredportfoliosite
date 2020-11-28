@@ -41,6 +41,8 @@ window.onload = function init() {
     if(servicesOfferStyle > window.innerWidth) {
         servicesOffer.style.overflow = 'scroll';
     }
+
+    alert('This site is being constructed');
 }
 
 
