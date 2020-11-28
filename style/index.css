@@ -518,7 +518,8 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 35px;
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 1000px;
     margin: auto;
 
 }
